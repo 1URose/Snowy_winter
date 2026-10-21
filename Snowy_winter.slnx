@@ -1,2 +1,4 @@
 ﻿<Solution>
+  <Project Path="SnowyWinter.SaveSystem.Tests.csproj" />
+  <Project Path="SnowyWinter.SaveSystem.csproj" />
 </Solution>

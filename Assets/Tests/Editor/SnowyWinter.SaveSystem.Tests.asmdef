@@ -1,0 +1,21 @@
+{
+    "name": "SnowyWinter.SaveSystem.Tests",
+    "rootNamespace": "SnowyWinter.Tests",
+    "references": [
+        "GUID:b4d8f2a61c3e4790a5b7d1e9f6c2a803"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false,
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}
