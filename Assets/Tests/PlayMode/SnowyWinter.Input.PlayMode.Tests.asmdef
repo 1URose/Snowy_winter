@@ -1,0 +1,18 @@
+{
+    "name": "SnowyWinter.Input.PlayMode.Tests",
+    "rootNamespace": "SnowyWinter.Input.PlayMode.Tests",
+    "references": [
+        "GUID:e5a8ba9f68c742a0b9b41cc7ed5a0c30",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false,
+    "optionalUnityReferences": ["TestAssemblies"]
+}
