@@ -91,6 +91,7 @@ namespace SnowyWinter.Input.Tests
             Assert.That(playerMove.expectedControlType, Is.EqualTo("Vector2"));
             Assert.That(HasBinding(playerMove, "<Keyboard>/w"), Is.True);
             Assert.That(HasBinding(playerMove, "<Keyboard>/upArrow"), Is.True);
+            Assert.That(HasBinding(playerMove, "<Gamepad>/leftStick"), Is.True);
             Assert.That(ui, Is.Not.Null);
             Assert.That(ui.FindAction("Navigate", false), Is.Not.Null);
             Assert.That(ui.FindAction("Submit", false), Is.Not.Null);
@@ -98,6 +99,9 @@ namespace SnowyWinter.Input.Tests
             Assert.That(HasBinding(ui.FindAction("Navigate", false), "<Keyboard>/downArrow"), Is.True);
             Assert.That(HasBinding(ui.FindAction("Point", false), "<Mouse>/position"), Is.True);
             Assert.That(HasBinding(ui.FindAction("Click", false), "<Mouse>/leftButton"), Is.True);
+            Assert.That(HasBinding(ui.FindAction("Navigate", false), "<Gamepad>/dpad"), Is.True);
+            Assert.That(HasBinding(ui.FindAction("Submit", false), "<Gamepad>/buttonSouth"), Is.True);
+            Assert.That(HasBinding(ui.FindAction("Cancel", false), "<Gamepad>/buttonEast"), Is.True);
         }
 
         [Test]
