@@ -1,4 +1,7 @@
 ﻿<Solution>
   <Project Path="SnowyWinter.SaveSystem.Tests.csproj" />
   <Project Path="SnowyWinter.SaveSystem.csproj" />
+  <Project Path="SnowyWinter.Input.PlayMode.Tests.csproj" />
+  <Project Path="SnowyWinter.Input.csproj" />
+  <Project Path="SnowyWinter.Camera.csproj" />
 </Solution>
