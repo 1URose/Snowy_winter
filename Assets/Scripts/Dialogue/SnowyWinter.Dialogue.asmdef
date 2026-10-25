@@ -1,0 +1,16 @@
+{
+    "name": "SnowyWinter.Dialogue",
+    "rootNamespace": "SnowyWinter.Dialogue",
+    "references": [
+        "SnowyWinter.SaveSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,22 @@
+{
+    "name": "SnowyWinter.Dialogue.Tests",
+    "rootNamespace": "SnowyWinter.Tests",
+    "references": [
+        "SnowyWinter.Dialogue",
+        "SnowyWinter.SaveSystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false,
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}
