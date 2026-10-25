@@ -22,6 +22,8 @@ namespace SnowyWinter.SaveSystem
         public void StartNew(GameStateData initialState = null)
         {
             Current = initialState ?? new GameStateData();
+            // Guid, not new Random(): two games started in the same tick must not share a seed.
+            Current.playthroughSeed = Guid.NewGuid().GetHashCode();
             MarkDirty();
         }
 

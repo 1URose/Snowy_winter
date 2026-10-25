@@ -23,6 +23,10 @@ namespace SnowyWinter.SaveSystem
 
         public float playTimeSeconds;
 
+        // Set once per playthrough. Dice checks derive their values from it,
+        // so reloading a save cannot reroll a check.
+        public int playthroughSeed;
+
         public List<string> inventoryItemIds = new List<string>();
         public List<string> evidenceIds = new List<string>();
         public List<string> completedEventIds = new List<string>();
