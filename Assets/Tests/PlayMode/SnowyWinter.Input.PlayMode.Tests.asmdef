@@ -3,7 +3,8 @@
     "rootNamespace": "SnowyWinter.Input.PlayMode.Tests",
     "references": [
         "GUID:e5a8ba9f68c742a0b9b41cc7ed5a0c30",
-        "Unity.InputSystem"
+        "Unity.InputSystem",
+        "Unity.InputSystem.TestFramework"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
