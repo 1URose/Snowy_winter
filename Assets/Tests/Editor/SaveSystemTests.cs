@@ -44,7 +44,7 @@ namespace SnowyWinter.Tests
                 gameState = new GameStateData
                 {
                     chapterId = "chapter-2", locationId = "tavern", checkpointId = "checkpoint-3",
-                    dialogueNodeId = "captain-intro", playTimeSeconds = 321.5f,
+                    dialogueNodeId = "captain-intro", playTimeSeconds = 321.5f, playthroughSeed = -123456789,
                     inventoryItemIds = { "letter", "key" }, evidenceIds = { "rope-mark" },
                     completedEventIds = { "met-sailor" },
                     choices = { new ChoiceData { choiceId = "route", optionId = "captain", selectedAtCheckpointId = "checkpoint-2" } },
@@ -67,6 +67,7 @@ namespace SnowyWinter.Tests
             Assert.That(loaded.metadata.playTimeSeconds, Is.EqualTo(321.5f));
             Assert.That(loaded.gameState.checkpointId, Is.EqualTo("checkpoint-3"));
             Assert.That(loaded.gameState.dialogueNodeId, Is.EqualTo("captain-intro"));
+            Assert.That(loaded.gameState.playthroughSeed, Is.EqualTo(-123456789));
             Assert.That(loaded.gameState.inventoryItemIds, Is.EqualTo(new[] { "letter", "key" }));
             Assert.That(loaded.gameState.evidenceIds, Is.EqualTo(new[] { "rope-mark" }));
             Assert.That(loaded.gameState.completedEventIds, Is.EqualTo(new[] { "met-sailor" }));
@@ -319,6 +320,18 @@ namespace SnowyWinter.Tests
             GameStateManager manager = new GameStateManager();
             Assert.That(manager.Current, Is.Not.Null);
             Assert.That(manager.IsDirty, Is.False);
+        }
+
+        [Test]
+        public void GameStateManager_StartNewGivesEachPlaythroughItsOwnSeed()
+        {
+            GameStateManager manager = new GameStateManager();
+
+            manager.StartNew();
+            int firstSeed = manager.Current.playthroughSeed;
+            manager.StartNew(new GameStateData { playthroughSeed = firstSeed });
+
+            Assert.That(manager.Current.playthroughSeed, Is.Not.EqualTo(firstSeed));
         }
 
         [Test]
