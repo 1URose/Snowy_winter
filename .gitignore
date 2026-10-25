@@ -5,9 +5,14 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+[Uu]serSettings/
 
 # Never ignore Asset meta data
 ![Aa]ssets/**/*.meta
+
+# Local visual checks created during development
+[Aa]ssets/Screenshots/
+[Aa]ssets/Screenshots.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # [Aa]ssets/AssetStoreTools*
